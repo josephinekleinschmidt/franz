@@ -9,7 +9,9 @@ body {
     grid-template-areas: 
         "pet pet"
         "btn-food btn-love";
-    height: 100vh;
+    gap: 1rem;
+    padding: 1rem;
+    height: 85vh;
 }
 
 .pet {
