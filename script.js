@@ -1,11 +1,12 @@
 var dragon = document.querySelector('.pet__color')
 var love = 70
 
-
 displayLove()
 
 setInterval(function () {
-    love = love - 0.1
+    if (love >= 0) {
+        love = love - 0.1
+    }
     displayLove()
 }, 50);
 
@@ -14,7 +15,9 @@ function displayLove() {
 }
 
 function giveLove() {
-    love = love + 10
+    if (love <= 100) {
+        love = love + 10
+    }
     displayLove()
 }
 

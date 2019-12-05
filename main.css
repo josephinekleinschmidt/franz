@@ -28,6 +28,7 @@ body {
 
 .pet__color {
     --fill: 50%;
+    -webkit-clip-path: inset(var(--fill) 0 0 0);
     clip-path: inset(var(--fill) 0 0 0);
     z-index: 1;
 }
