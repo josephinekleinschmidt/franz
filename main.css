@@ -2,3 +2,37 @@ body {
     margin: 0;
     background-color: #8c9c6d;
 }
+
+.grid {
+    display: grid;
+    grid-template: 1fr min-content/1fr 1fr;
+    grid-template-areas: 
+        "pet pet"
+        "btn-food btn-love";
+    height: 100vh;
+}
+
+.pet {
+    grid-area: pet;
+    position: relative;
+}
+
+.pet__outline,
+.pet__color {
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translateY(-50%);
+}
+
+.pet__color {
+    --fill: 50%;
+    clip-path: inset(var(--fill) 0 0 0);
+    z-index: 1;
+}
+
+.btn {
+    height: 3rem;
+    font-size: 2rem;
+}
